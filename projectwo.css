@@ -1,0 +1,82 @@
+/*
+#container {
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+}
+#alb1 {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+#alb2 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+#alb3 {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+}
+#alb4 {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+*/
+body {
+	padding: 2em;
+	background-color: #6D899F;
+}
+h1, h2, title {
+  text-align: center;
+}
+p {
+  text-align: left;
+}
+header, footer {
+	background-color: #ffa;
+	padding: 5px;
+  border: 6px solid;
+}
+section {
+	display: flex;
+  flex-wrap: wrap;
+	width: 100%;
+  border: 5px solid 
+ 
+}
+article {
+	order: 2;
+	flex: 3;
+	background-color: #BCD39B;
+}
+nav {
+	order: 1;
+	flex: 1;
+	background-color: #CE9B64;
+  border: 2px solid;
+}
+aside {
+	order: 3;
+	flex: 1;
+	background-color: #62626D;
+  border: 2px solid;
+}
+article, nav, aside {
+	padding: 1em;
+}
+/* mobile layout */
+/* @media (max-width: 480px) { */
+@media only screen and (max-width: 520px) {
+	section {
+		display: flex;
+		width: 100%;
+    flex-direction: column;
+	}
+	article { order: 2; }
+	nav     { order: 1; }
+  aside   { order: 3; }
+}
+
